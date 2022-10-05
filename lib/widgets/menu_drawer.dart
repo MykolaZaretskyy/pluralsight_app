@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pluralsight_app/screens/bmi_screen.dart';
 import 'package:pluralsight_app/screens/intro_screen.dart';
+import 'package:pluralsight_app/screens/weather_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -43,6 +44,9 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'BMI Calculator':
               page = const BmiCalculatorScreen();
+              break;
+            case 'Weather':
+              page = const WeatherScreen();
               break;
             default:
           }

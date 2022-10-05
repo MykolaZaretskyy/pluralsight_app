@@ -68,7 +68,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
             Padding(
               padding: const EdgeInsets.all(32.0),
               child: ElevatedButton(
-                onPressed: CalcumateBmi,
+                onPressed: calcumateBmi,
                 child: const Text('Calculate BMI', style: TextStyle(fontSize: 18),)),
             ),
             Text(result,
@@ -94,7 +94,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
     });
   }
 
-  void CalcumateBmi() {
+  void calcumateBmi() {
     double bmi = 0;
     double height = double.tryParse(heightTextController.text) ?? 0;
     double weight = double.tryParse(widthTextController.text) ?? 0;
